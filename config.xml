@@ -10,7 +10,7 @@
 	<access origin="deilo.ru" launch-external="no"/> 
 	<plugin name="cordova-plugin-whitelist" spec="1" />
 	<allow-navigation href="https://deilo.ru/*" />	
-    <content src="https://deilo.ru/?utm_source=apkf" />
+    <content src="https://deilo.ru/?utm_source=apkf1" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
 
