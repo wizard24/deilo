@@ -14,7 +14,7 @@
 	<preference name="Orientation" value="default" />
 	<icon src="icon.png" />
 	<feature name="http://api.phonegap.com/1.0/storage"/>
-	<gap:plugin name="org.apache.cordova.network-information" />
+
     <content src="index.html" />
     <access origin="*" />
 	<allow-navigation href="*" />
