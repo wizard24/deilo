@@ -5,7 +5,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Deilo</title>
     </head>
-    <body style="margin: 0;">
+    <body style="margin: 0;" onload="check()">
 	    <!--iframe id="ifr"  src="https://deilo.ru/" scrolling="yes" style="display:none; position: absolute; top:0px;   left:0px;border: 0; width: 100%; height: 100%" align="left"></iframe-->
 		
 <div id="noconnection" style="display:none; height:100%; width:100%; position:relative;   text-align: center;   font-size: 4vh;  margin-top: 16vh;">
@@ -17,36 +17,39 @@
 		
 		<script>
 
-check();
+
 	function check(){
 	var request_inCheck = new XMLHttpRequest();
 
-		request_inCheck.open("GET",window.location.pathname , true);
+		request_inCheck.open("GET", "https://deilo.ru" , true);
 		request_inCheck.timeout = 900;
 
 		request_inCheck.addEventListener("readystatechange", function() {
 			
 			if(request_inCheck.status == 0) {
 
-				document.getElementById("ifr").style.display = 'none';
+				//document.getElementById("ifr").style.display = 'none';
 				document.getElementById("noconnection").style.display = 'block';
 
 			} else {
 
 				document.getElementById("noconnection").style.display = 'none';
-				document.getElementById("ifr").style.display = 'block';
+				//document.getElementById("ifr").style.display = 'block';
 			}
 			
 		});
 
 		request_inCheck.send();
 	}
+	
+	
+	/*
 	setInterval(function() {
 		
 		check();
 		
 	}, 5000); // Проверка каждые 5 секунд
-
+*/
 		
 		
 		
@@ -55,7 +58,7 @@ check();
 			document.getElementById("ifr").style.height=window.innerHeight+"px";
 			}
 		</script>       
-	   <script type="text/javascript" src="cordova.js"></script>
+	   <!--script type="text/javascript" src="cordova.js"></script-->
 		
     </body>
 </html>
