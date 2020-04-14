@@ -5,10 +5,10 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Deilo</title>
     </head>
-    <body style="margin: 0;" onload="check()">
+    <body style="margin: 0;">
 	    <!--iframe id="ifr"  src="https://deilo.ru/" scrolling="yes" style="display:none; position: absolute; top:0px;   left:0px;border: 0; width: 100%; height: 100%" align="left"></iframe-->
-		
-<div id="noconnection" style="display:none; height:100%; width:100%; position:relative;   text-align: center;   font-size: 4vh;  margin-top: 16vh;">
+		<div id="frame" style="position: absolute; top:0px;   z-index:1; left:0px;border: 0; width: 100%; height: 100%"></div>
+<div id="noconnection" style="display:none; height:100%; width:100%; position:absolute; z-index:2;  text-align: center;   font-size: 4vh;  margin-top: 16vh;">
 <img src="/deilo.svg" alt="img" style="display:inline-block; width:40vh; margin:1vw;">
 <br>Нет подключения к сети интернет
 </div>
@@ -35,6 +35,10 @@
 
 				document.getElementById("noconnection").style.display = 'none';
 				//document.getElementById("ifr").style.display = 'block';
+				
+				
+				document.getElementById("frame").innerHTML='<iframe id="ifr"  src="https://deilo.ru/" scrolling="yes" style="position: absolute; top:0px;   left:0px;border: 0; width: 100%; height: 100%" align="left"></iframe>';
+				document.getElementById("ifr").style.height=window.innerHeight+"px";
 			}
 			
 		});
@@ -43,22 +47,16 @@
 	}
 	
 	
-	/*
-	setInterval(function() {
-		
-		check();
-		
-	}, 5000); // Проверка каждые 5 секунд
-*/
-		
+
 		
 		
 		
 			window.onload=function() {
-			document.getElementById("ifr").style.height=window.innerHeight+"px";
+			
+			check();
 			}
 		</script>       
-	   <!--script type="text/javascript" src="cordova.js"></script-->
+	   <script type="text/javascript" src="cordova.js"></script>
 		
     </body>
 </html>
