@@ -17,38 +17,43 @@
 		
 		<script>
 
+check();
+	function check(){
+	var request_inCheck = new XMLHttpRequest();
 
-function checkConnection() {
-    var networkState = navigator.connection.type;
+		request_inCheck.open("GET",window.location.pathname , true);
+		request_inCheck.timeout = 900;
 
-    var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
+		request_inCheck.addEventListener("readystatechange", function() {
+			
+			if(request_inCheck.status == 0) {
 
-    alert('Connection type: ' + states[networkState]);
-}
+				document.getElementById("ifr").style.display = 'none';
+				document.getElementById("noconnection").style.display = 'block';
 
-checkConnection();
+			} else {
 
+				document.getElementById("noconnection").style.display = 'none';
+				document.getElementById("ifr").style.display = 'block';
+			}
+			
+		});
 
-document.addEventListener("online", onOnline, false);
-document.addEventListener("offline", onOffline, false);
+		request_inCheck.send();
+	}
+	setInterval(function() {
+		
+		check();
+		
+	}, 5000); // Проверка каждые 5 секунд
 
-function onOnline() {
-    document.getElemenyById("noconnection").style.display = "none";
-}
-
-function onOffline() {
-    document.getElemenyById("noconnection").style.display = "block";
-}
-
-
+		
+		
+		
+		
+			window.onload=function() {
+			document.getElementById("ifr").style.height=window.innerHeight+"px";
+			}
 		</script>       
 	   <script type="text/javascript" src="cordova.js"></script>
 		
