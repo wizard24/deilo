@@ -12,7 +12,7 @@
 	<preference name="Fullscreen" value="true" />
 	<preference name="DisallowOverscroll" value="true"/>
 	<preference name="Orientation" value="default" />
-	<plugin name="Storage" value="org.apache.cordova.Storage" />
+	<feature name="http://api.phonegap.com/1.0/storage"/>
     <content src="index.html" />
     <access origin="*" />
 	<allow-navigation href="*" />
