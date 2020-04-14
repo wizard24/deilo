@@ -9,9 +9,10 @@
     </author>
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<feature name="http://api.phonegap.com/1.0/network"/>
-	<preference name="Fullscreen" value="true" />
+	<preference name="Fullscreen" value="false" />
 	<preference name="DisallowOverscroll" value="true"/>
 	<preference name="Orientation" value="default" />
+	<icon src="icon.png" />
 	<feature name="http://api.phonegap.com/1.0/storage"/>
     <content src="index.html" />
     <access origin="*" />
