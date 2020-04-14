@@ -2,11 +2,15 @@
 <widget id="ru.deilo.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Deilo</name>
     <description>
-        A blank PhoneGap app.
+       Deilo App
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="info@deilo.ru" href="https://deilo.ru">
+        Deilo Team
     </author>
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+	<feature name="http://api.phonegap.com/1.0/network"/>
     <content src="index.html" />
     <access origin="*" />
+	<allow-navigation href="*" />
+	<allow-intent href="*" />
 </widget>
