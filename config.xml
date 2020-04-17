@@ -8,6 +8,9 @@
         Deilo
     </author> 
 	<preference name="phonegap-version" value="cli-9.0.0" />
+	<preference name="windows-identity-name" value="57631Deilo.Deilo" />
+	<preference name="windows-family-name" value="57631Deilo.Deilo_ee3cd1hv8vdzr" />
+	<preference name="windows-publisher-name" value="CN=6CEA749E-5EFA-403F-8DFC-D7D24549B615" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<preference name="Fullscreen" value="false" />
