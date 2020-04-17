@@ -14,7 +14,7 @@
 <preference name="WindowsStoreIdentityName" value="57631Deilo.Deilo" />
 <preference name="WindowsStorePublisherId" value="Deilo" />
 <preference name="WindowsStorePublisherName" value="CN=6CEA749E-5EFA-403F-8DFC-D7D24549B615" />
-<preference name="WindowsStorePublisherDisplayName" value="Deilo"/>
+<preference name="WindowsStorePublisherDisplayName" value="Deilo" />
 
 <vs:platformSpecificValues>
 <vs:platformSpecificWidget platformName="windows" id="57631Deilo.Deilo_ee3cd1hv8vdzr" />
