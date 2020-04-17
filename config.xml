@@ -7,8 +7,7 @@
     <author email="info@deilo.ru" href="https://deilo.ru">
         Deilo
     </author> 
-	<!--preference name="phonegap-version" value="cli-9.0.0" /-->
-	<preference name="phonegap-version" value="cli-7.0.0" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
 	
 
 <preference name="WindowsStoreDisplayName" value="Deilo" />
