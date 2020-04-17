@@ -2,10 +2,10 @@
 <widget id="ru.deilo.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Deilo</name>
     <description>
-       Deilo App
+       Deilo
     </description>
     <author email="info@deilo.ru" href="https://deilo.ru">
-        Deilo Team
+        Deilo
     </author> 
 	<preference name="phonegap-version" value="cli-9.0.0" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
