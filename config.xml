@@ -12,7 +12,7 @@
 
 <preference name="WindowsStoreDisplayName" value="Deilo" />
 <preference name="WindowsStoreIdentityName" value="57631Deilo.Deilo" />
-<preference name="WindowsStoreIdentityPublisher" value="CN=6CEA749E-5EFA-403F-8DFC-D7D24549B615" />
+<preference name="WindowsStorePublisherId" value="CN=6CEA749E-5EFA-403F-8DFC-D7D24549B615" />
 
 
 
