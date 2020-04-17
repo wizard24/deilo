@@ -9,7 +9,7 @@
     </author> 
 	<preference name="phonegap-version" value="cli-9.0.0" />
 	
-
+<preference name="windows-identity-name" value="57631Deilo.Deilo" />
 <preference name="WindowsStoreDisplayName" value="Deilo" />
 <preference name="WindowsStoreIdentityName" value="57631Deilo.Deilo" />
 <preference name="WindowsStorePublisherId" value="CN=6CEA749E-5EFA-403F-8DFC-D7D24549B615" />
